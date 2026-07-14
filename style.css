@@ -381,3 +381,46 @@ nav a{
 }
 
 }
+/* Active Navigation */
+
+nav a.active{
+    color:#00e5ff;
+    font-weight:bold;
+}
+
+/* Scroll Animation */
+
+.hidden{
+    opacity:0;
+    transform:translateY(60px);
+    transition:1s;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* Scroll To Top Button */
+
+#topBtn{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#00e5ff;
+    color:#000;
+    font-size:22px;
+    cursor:pointer;
+    display:none;
+    box-shadow:0 0 20px #00e5ff;
+    transition:.3s;
+    z-index:1000;
+}
+
+#topBtn:hover{
+    transform:scale(1.1);
+}
